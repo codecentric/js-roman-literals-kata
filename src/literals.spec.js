@@ -37,4 +37,16 @@ describe('Literals', () => {
     // ASSERT
     expect(result).toStrictEqual('V');
   })
+
+  it ('should return VI for input 6', () => {
+    // ARRANGE
+    const input = 6;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('VI');
+
+  })
 });
