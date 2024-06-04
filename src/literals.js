@@ -4,11 +4,14 @@ export const sum = (a, b) => {
 
 export const toRomanLiteral = (input) => {
   let result = '';
-  const modulu10 = input % 10;
+  const modulo10 = input % 10;
+  if (input >= 9) {
+    result = 'X'
+  }
 
   const modulo5 = input % 5;
-  if (input >= 4) {
-    result = 'V';
+  if (input >= 4 && input < 5) {
+    result += 'V';
   }
   if (modulo5 === 4) {
     return 'I' + result;
