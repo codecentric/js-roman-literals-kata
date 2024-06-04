@@ -27,6 +27,17 @@ describe('Literals', () => {
     expect(result).toStrictEqual('II');
   });
 
+  it('should return IV for input 4', () => {
+    // ARRANGE
+    const input = 4;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('IV');
+  });
+
   it('should return V for input 5', () => {
     // ARRANGE
     const input = 5;
@@ -36,9 +47,9 @@ describe('Literals', () => {
 
     // ASSERT
     expect(result).toStrictEqual('V');
-  })
+  });
 
-  it ('should return VI for input 6', () => {
+  it('should return VI for input 6', () => {
     // ARRANGE
     const input = 6;
 
@@ -47,6 +58,16 @@ describe('Literals', () => {
 
     // ASSERT
     expect(result).toStrictEqual('VI');
+  });
 
-  })
+  it('should return IX for input 9', () => {
+    // ARRANGE
+    const input = 9;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('IX');
+  });
 });

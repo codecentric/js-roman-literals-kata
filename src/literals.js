@@ -3,13 +3,19 @@ export const sum = (a, b) => {
 };
 
 export const toRomanLiteral = (input) => {
-  const modulo5 = input % 5
-  let result = ""
-  if (modulo5 === 0) {
-    result = "V"
+  let result = '';
+  const modulu10 = input % 10;
+
+  const modulo5 = input % 5;
+  if (input >= 4) {
+    result = 'V';
   }
+  if (modulo5 === 4) {
+    return 'I' + result;
+  }
+
   for (let index = 0; index < modulo5; index++) {
-    result += "I"
+    result += 'I';
   }
   return result;
 };
