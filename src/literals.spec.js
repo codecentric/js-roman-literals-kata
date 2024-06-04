@@ -92,4 +92,37 @@ describe('Literals', () => {
     // ASSERT
     expect(result).toStrictEqual('XIV');
   });
+
+  it('should return XV for input 15', () => {
+    // ARRANGE
+    const input = 15;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XV');
+  });
+
+  it('should return XIX for input 19', () => {
+    // ARRANGE
+    const input = 19;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XIX');
+  });
+
+  it('should return XX for input 20', () => {
+    // ARRANGE
+    const input = 20;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XX');
+  });
 });

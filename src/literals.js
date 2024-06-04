@@ -24,7 +24,7 @@ const restAfter10 = (input) => {
   if (input >= 5) {
     result = 'V';
   }
-  for (let index = 0; index < input; index++) {
+  for (let index = 0; index < input % 5; index++) {
     result += 'I';
   }
   return result;
