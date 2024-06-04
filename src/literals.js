@@ -9,17 +9,17 @@ export const toRomanLiteral = (input) => {
     result = 'X';
   }
 
-  return foo();
+  return result + restAfter10(modulo10);
 };
 
-const foo = (input) => {
+const restAfter10 = (input) => {
   if (input === 4) {
     return 'IV';
   }
   if (input === 9) {
     return 'IX';
   }
-  let result;
+  let result = '';
 
   if (input >= 5) {
     result = 'V';
