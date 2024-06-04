@@ -10,7 +10,7 @@ export const toRomanLiteral = (input) => {
   }
 
   const modulo5 = input % 5;
-  if (input >= 4 && input < 5) {
+  if (input >= 4 && input < 9) {
     result += 'V';
   }
   if (modulo5 === 4) {

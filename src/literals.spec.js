@@ -70,4 +70,26 @@ describe('Literals', () => {
     // ASSERT
     expect(result).toStrictEqual('IX');
   });
+
+  it('should return X for input 10', () => {
+    // ARRANGE
+    const input = 10;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('X');
+  });
+
+  it('should return XIV for input 14', () => {
+    // ARRANGE
+    const input = 14;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XIV');
+  });
 });
