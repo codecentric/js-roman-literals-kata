@@ -125,4 +125,59 @@ describe('Literals', () => {
     // ASSERT
     expect(result).toStrictEqual('XX');
   });
+
+  it('should return XXI for input 21', () => {
+    // ARRANGE
+    const input = 21;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XXI');
+  });
+
+  it('should return XXV for input 25', () => {
+    // ARRANGE
+    const input = 25;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XXV');
+  });
+
+  it('should return XXIX for input 29', () => {
+    // ARRANGE
+    const input = 29;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XXIX');
+  });
+
+  it('should return XL for input 40', () => {
+    // ARRANGE
+    const input = 40;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XL');
+  });
+
+  it('should return XLIX for input 49', () => {
+    // ARRANGE
+    const input = 49;
+
+    // ACT
+    const result = toRomanLiteral(input);
+
+    // ASSERT
+    expect(result).toStrictEqual('XLIX');
+  });
 });
